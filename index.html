@@ -76,7 +76,7 @@ footer{
     /* .text-secondary{
       padding-left: 20px;
     } */
-}
+
 .accordion-button {
     background-color: #333 !important; /* Dark Grey */
     color: white !important;
@@ -90,10 +90,24 @@ footer{
 }
 .grid {
         min-height: auto!important; /* Adjust height based on content */
-    }
-    .landpage{
-      min-height: 400px !important;
-    }
+ } 
+ .landpage {
+    background-image: url('https://cdn.wallpapersafari.com/24/74/zgeTuV.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: auto; /* Default: adjusts based on content */
+    height: auto !important; /* Ensures it grows if needed */
+    /* display: flex;
+    flex-direction: column; */
+    justify-content: center; 
+    /* padding-bottom: 20px; Adds space between content and bottom */
+    position: relative; /* Keeps it below navbar */
+    z-index: 1; /* Lower than navbar */
+    width: 100%;
+    overflow: hidden;
+}
+}
 
 @media screen and (min-width: 750px) { /* Large screens (992px and above) */
     .navbar-buttons {
@@ -133,6 +147,22 @@ footer{
       font-size: 14px;
       font-weight: 500;
     }
+    .landpage {
+    background-image: url('https://cdn.wallpapersafari.com/24/74/zgeTuV.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Default: adjusts based on content */
+    height: 100vh !important; /* Ensures it grows if needed */
+    /* display: flex;
+    flex-direction: column; */
+    justify-content: center; 
+    /* padding-bottom: 20px; Adds space between content and bottom */
+    position: relative; /* Keeps it below navbar */
+    z-index: 1; /* Lower than navbar */
+    width: 100%;
+    overflow: hidden;
+}
 }
 
 .navbar-toggler {
@@ -147,21 +177,7 @@ body{
 }
 
 
-  .landpage {
-    background-image: url('https://cdn.wallpapersafari.com/24/74/zgeTuV.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh; /* Ensures it covers the full screen height */
-    /* display: flex;
-    flex-direction: column; */
-    justify-content: center; 
-    /* padding-bottom: 20px; Adds space between content and bottom */
-    position: relative; /* Keeps it below navbar */
-    z-index: 1; /* Lower than navbar */
-    width: 100%;
-    overflow: hidden;
-}
+  
 
 .landpage::before {
     content: "";
